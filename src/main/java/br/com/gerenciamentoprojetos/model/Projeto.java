@@ -155,9 +155,19 @@ public class Projeto {
 
 	@Override
 	public String toString() {
-		return "Projeto " + nome + ", descricao: " + descricao + ", status: " + status + "\nrisco: "
-				+ risco + ", orcamento: " + orcamento + ", data início: " + dataInicio + ", data previsão: " + dataPrevisao
-				+ ", data final=" + dataFinal + ", gerente:" + gerente + ", funcionários: " + funcionarios;
+		return "Projeto{" +
+				"id=" + id +
+				", nome='" + nome + '\'' +
+				", descricao='" + descricao + '\'' +
+				", status='" + status + '\'' +
+				", risco='" + risco + '\'' +
+				", orcamento=" + orcamento +
+				", dataInicio=" + dataInicio +
+				", dataPrevisao=" + dataPrevisao +
+				", dataFinal=" + dataFinal +
+				", gerente=" + gerente +
+				", funcionarios=" + funcionarios +
+				'}';
 	}
 
 	@Override

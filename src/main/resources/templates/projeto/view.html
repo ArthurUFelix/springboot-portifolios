@@ -32,6 +32,9 @@
                 <li class="nav-item">
                     <a class="nav-link " th:href="@{/funcionario/list}">Funcionários</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/usuario/list}">Usuários</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -83,7 +86,6 @@
                 </div>    
             </div>
 
-
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Risco</label>
 
@@ -130,8 +132,7 @@
 	            			th:each="funcionario : ${projeto.get().getFuncionarios()}"
 	            			th:text="${funcionario}"> </li>
 	            	</ul>
-	            </div>	
-            	
+	            </div>
             </div>
 
             <div class="form-group row">
@@ -142,12 +143,8 @@
                         <i class="fa fa-backspace"></i> Voltar
                     </button>
                 </div>
-                
-
             </div>
-
         </form>
-        
     </div>
 
     <div class="contato">
@@ -161,8 +158,6 @@
     <footer>
         <label class="data-footer"><i class="far fa-copyright"></i> 2020 Todos os direitos reservados.</label>
     </footer>
-
-
 
     <!-- JS -->
     <script th:src="@{/js/jquery-3.5.1.min.js}"></script>
